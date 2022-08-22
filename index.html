@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no">
+	<title>Embed Google Map | Know Cookies</title>
+	<meta name="description" content="Example.">
+	<link rel="stylesheet" href="styles.css" media="all">
+	<link rel="manifest" href="../manifest.json">
+	<link rel="canonical" href="https://knowcookies.com/">
+	<link rel="apple-touch-icon" sizes="76x76" href="../76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../180x180.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="../512x512.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="../1024x1024.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../16x16.png">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Know Cookies">
+	<meta name="application-name" content="Know Cookies">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Embed Google Map | Know Cookies">
+	<meta property="og:url" content="https://knowcookies.com/">
+	<meta property="og:site_name" content="Know Cookies">
+	<meta property="og:description" content="Example.">
+	<meta property="og:image" content="https://knowcookies.com/logo.png">
+	<meta property="og:type" content="website">
+
+	<!-- work added by awais_webdev -->
+	<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="assets/jquery-mobile.js"></script>
+	<script src="assets/jqueryui.js"></script>
+	<script src="assets/script.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> -->
+</head>
+
+<body class="index">
+	<div class="app">
+		<header role="banner" class="main-header">
+			<div class="container">
+				<div class="logo-wrapper"> <img class="logo" src="https://knowcookies.com/logo.png" alt="Know Cookies" width="239" height="105"> </div>
+				<nav class="main-nav" role="navigation" aria-hidden="false">
+					<ul>
+						<li> <a href="https://knowcookies.com">Home</a> </li>
+						<li> <a href="https://knowcookies.com/manage-cookies/">Manage Cookies</a> </li>
+						<li> <a href="https://knowcookies.com/webmasters/">Webmasters Guide</a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="section homepage-content fix-for-iframe fix-bg-for-iframe">
+			<div class="container">
+				<h1 class="page-title">Embed Google Map</h1>
+				<p class="page-catchphrase">Add a google map to your website.</p>
+				<div class="case-studies"> </div>
+			</div>
+		</section>
+
+		<!-- main added by awais_webdev -->
+		<main>
+			<style>
+				.fix-for-iframe {
+					padding-bottom: 0;
+				}
+
+				.fix-bg-for-iframe {
+					background-color: #f9f9f9 !important;
+				}
+			</style>
+			<script>
+				function calcHeight(iframeElement) {
+					var the_height=  iframeElement.contentWindow.document.body.querySelector('.map_container').parentNode.offsetHeight;
+					// var the_height=  iframeElement.contentWindow.document.body.querySelector('.map_container').offsetHeight + iframeElement.contentWindow.document.body.querySelector('.faq_main').offsetHeight;
+					iframeElement.height=  the_height;
+				}
+			</script>
+			<iframe src="./iframe-include.html" onLoad="calcHeight(this);" frameborder="0" scrolling="no" id="the_iframe" width="100%"></iframe>
+		</main>
+
+		<footer class="main-footer" role="contentinfo">
+			<div class="container">
+				<p>© Know Cookies 2020. Hosted by <a href="https://dofollow.co.uk">Dofollow</a>.
+					<br>A big thank you to <a href="//knowcookies.com/thanks/">our supporters</a>.</p>
+			</div>
+		</footer>
+	</div>
+	<!-- <script defer src="/sw-register.js"></script> -->
+</body>
+
+</html>
